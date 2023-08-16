@@ -6,11 +6,11 @@ let isEffectEnabled = true;
 
 toggleButton.addEventListener("click", () => {
     isEffectEnabled = !isEffectEnabled;
-    if (isEffectEnabled) {
+    if (isEffectEnabled) { //desactive l'effet
         toggleButton.textContent = "Désactiver";
-    } else {
+    } else { //active l'effet
         toggleButton.textContent = "Activer";
-        navBar.style.display = "flex"; // Assurez-vous que la barre est visible lorsque l'effet est désactivé.
+        navBar.style.display = "flex"; 
     }
 });
 

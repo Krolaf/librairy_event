@@ -3,6 +3,8 @@
      padding: 0;
  }
 
+ /* navBar */
+
  h1 {
      font-size: 3vw;
  }
@@ -29,6 +31,8 @@
      color: rgb(39, 147, 48);
      font-weight: 900;
  }
+
+ /* sideBar */
 
  #sideBar {
      position: absolute;
@@ -95,6 +99,8 @@
      transform: translateY(-50%) rotate(-45deg);
  }
 
+ /* generateur */
+
  #generator {
      font-size: 10vw;
      display: flex;
@@ -103,6 +109,15 @@
      background-color: red;
      border-radius: 50px;
  }
+
+ /* partie du bas */
+
+ #bottomSide {
+     display: flex;
+     justify-content: space-around;
+ }
+
+ /* formulaire d'ajout */
 
  #formu {
      display: flex;
@@ -124,22 +139,19 @@
      font-weight: 800;
  }
 
- #bottomSide{
-    display: flex;
-    justify-content: space-around;
- }
+ /* gestion d'interval */
 
  #console {
-    border: 1px solid #ccc;
-    padding: 10px;
-    height: 200px;
-    overflow: auto;
-    text-align: center;
-    font-size: 2vw;
-    color: rgb(8, 190, 8);
-    background-color: #000;
-}
+     border: 1px solid #ccc;
+     padding: 10px;
+     height: 200px;
+     overflow: auto;
+     text-align: center;
+     font-size: 2vw;
+     color: rgb(8, 190, 8);
+     background-color: #000;
+ }
 
-#terminal{
-width: 20vw;
-}
+ #terminal {
+     width: 20vw;
+ }
