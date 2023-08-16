@@ -1,0 +1,145 @@
+ * {
+     margin: 0;
+     padding: 0;
+ }
+
+ h1 {
+     font-size: 3vw;
+ }
+
+ nav {
+     background-color: aquamarine;
+     height: 10vh;
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     font-size: 1.2vw;
+ }
+
+ nav ul {
+     list-style: none;
+     display: flex;
+     width: 50vw;
+     justify-content: space-around;
+
+ }
+
+ a {
+     text-decoration: none;
+     color: rgb(39, 147, 48);
+     font-weight: 900;
+ }
+
+ #sideBar {
+     position: absolute;
+     width: 180px;
+     height: 100%;
+     background: #09fbba;
+     top: 0;
+     left: -200px;
+     transition: 0.5s ease-out;
+     z-index: 4;
+     border-right: solid black 8px
+ }
+
+ #sideBar ul {
+     color: #292929;
+     list-style: none;
+     font-size: 1.6rem;
+     cursor: pointer;
+     padding-left: 5px;
+
+ }
+
+ #sideBar li {
+     margin-bottom: 20vh;
+     margin-top: 4.5vh;
+ }
+
+ #burger {
+     width: 50px;
+     height: 50px;
+     position: absolute;
+     top: 120px;
+     left: 230px;
+     cursor: pointer;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: rgb(95, 95, 222);
+     border: solid 5px black;
+
+ }
+
+ #burger span {
+     position: absolute;
+     width: 60px;
+     height: 8px;
+     background-color: #000;
+     /* Couleur de la croix et de la flèche */
+     transition: transform 0.3s ease;
+ }
+
+ #burger span:nth-child(1) {
+     top: 50%;
+     transform: translateY(-50%) rotate(0);
+ }
+
+ #burger span:nth-child(2) {
+     top: 50%;
+     transform: translateY(-50%) rotate(45deg);
+ }
+
+ #burger span:nth-child(3) {
+     top: 50%;
+     transform: translateY(-50%) rotate(-45deg);
+ }
+
+ #generator {
+     font-size: 10vw;
+     display: flex;
+     justify-content: center;
+     margin: 150px;
+     background-color: red;
+     border-radius: 50px;
+ }
+
+ #formu {
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     background-color: orange;
+     width: 20vw;
+     height: auto;
+     padding: 1vw 5vw 1vw 5vw;
+     border-radius: 100px;
+ }
+
+ p {
+     background-color: rgb(157, 157, 218);
+     padding: 0.4vw;
+     margin: 0.4em;
+     border-radius: 100px;
+     text-align: center;
+     font-weight: 800;
+ }
+
+ #bottomSide{
+    display: flex;
+    justify-content: space-around;
+ }
+
+ #console {
+    border: 1px solid #ccc;
+    padding: 10px;
+    height: 200px;
+    overflow: auto;
+    text-align: center;
+    font-size: 2vw;
+    color: rgb(8, 190, 8);
+    background-color: #000;
+}
+
+#terminal{
+width: 20vw;
+}
