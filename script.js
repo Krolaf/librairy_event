@@ -2,16 +2,17 @@
 const navBar = document.querySelector("nav");
 const toggleButton = document.getElementById("toggleButton");
 let mouseMove = 0;
-let isEffectEnabled = true;
+let isEffectEnabled = false;
 
 toggleButton.addEventListener("click", () => {
-    isEffectEnabled = !isEffectEnabled;
+    
     if (isEffectEnabled) { //desactive l'effet
-        toggleButton.textContent = "Désactiver";
-    } else { //active l'effet
         toggleButton.textContent = "Activer";
+    } else { //active l'effet
+        toggleButton.textContent = "Désactiver";
         navBar.style.display = "flex"; 
     }
+    isEffectEnabled = !isEffectEnabled;
 });
 
 window.addEventListener("mousemove", (e) => {
@@ -62,11 +63,12 @@ setInterval(changeBackgroundColor, 1000);
 // etape 4, generation auto de citation
 
 const data = [
-    "Phrase 1",
-    "Phrase 2",
-    "Phrase 3",
-    "Phrase 4",
-    "Phrase 5",
+    "Bienvenu dans mon labo",
+    "Bienvenu dans mon site de... trucs",
+    "Bienvenu dans mon bac a sable",
+    "Bienvenu dans mon bordel",
+    "Bienvenu dans ma bibliothe",
+    
 ];
 
 const generator = document.getElementById("generator");
@@ -88,7 +90,7 @@ function getRandomIndex() {
 
 displayRandomData(); 
 
-setInterval(displayRandomData, 5000); 
+setInterval(displayRandomData, 3000); 
 
 //étape 5 , un formulaire qui ajoute des ajout de lutilisateur, supprimable par un clique
 
@@ -149,4 +151,3 @@ stopButton.addEventListener("click", function() {
 clearConsole.addEventListener("click", function() {
     annonce.textContent = ""; // Vide la console
 });
-

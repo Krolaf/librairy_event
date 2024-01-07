@@ -1,0 +1,129 @@
+*{
+margin:0;
+padding:0;
+}
+
+body{
+    background-image: url(/1232699.png);
+    background-size: cover; /* L'image couvre tout l'écran */
+    background-position: center center; /* Centrer l'image */
+    background-repeat: no-repeat; /* Pour ne pas répéter l'image */
+    background-attachment: fixed; /* Garde l'image fixe lors du défilement */
+    height: 100vh; /* Hauteur totale de la fenêtre */
+    overflow-x: hidden;
+}
+
+.event {
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    background-color: #e871c2; 
+    color: white; 
+    border-radius: 4px; 
+    transition: transform 0.1s, box-shadow 0.1s; 
+    position: relative;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 0; 
+    outline: none;
+}
+
+.event:hover {
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.8); 
+    transform: translateY(-5px); 
+}
+
+.event:active {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6); 
+    transform: translateY(1px); 
+    z-index: 1; 
+}
+
+#textZone{
+    background: pink;
+    border-radius: 20px;
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 10px 10px 10px rgb(208, 127, 140);
+}
+
+ .container {
+    margin-top: 2vw;
+    max-width: 600px;
+    text-align: center;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    
+}
+
+#cardsContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgb(201, 102, 119);
+    box-shadow: 10px 10px 10px rgb(160, 48, 67);
+}
+
+.card textarea {
+    width: 100%;
+    height: 25px; /* hauteur limitée pour avoir l'apparence d'un input */
+    border-radius: 6px;
+    overflow-y: hidden; /* cache le défilement vertical */
+    resize: none; /* empêche le redimensionnement */
+    word-wrap: break-word; /* casse les mots trop longs */
+    white-space: pre-wrap; /* respecte les espaces et les retours à la ligne */
+    margin-bottom: 5px;
+    text-align: center;
+    width: 50%;
+    font-size: 1.4vw;
+}
+
+
+.deleteBtn {
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.input-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 200px;
+    margin-bottom: 20px;
+    user-select: none
+}
+input{
+    border: none;
+    padding: 3px;
+    border-radius: 6px;
+    background: #fa94da;
+}
+
+.bouton{
+    display: flex;
+    width: 90%;
+    gap: 6px;
+    user-select: none; /* Standard syntax */
+}

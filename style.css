@@ -3,19 +3,29 @@
      padding: 0;
  }
 
+ body{-ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+body::-webkit-scrollbar {
+    display: none; /* WebKit */
+}
+
  /* navBar */
 
+
  h1 {
-     font-size: 3vw;
+     font-size: 4vw;
  }
 
  nav {
-     background-color: aquamarine;
+     background-color: rgb(235, 151, 165);
      height: 10vh;
      display: flex;
      align-items: center;
      justify-content: space-around;
-     font-size: 1.2vw;
+     font-size: 1.8vw;
+     border-bottom: 2px solid rgb(220, 78, 78);
  }
 
  nav ul {
@@ -28,7 +38,7 @@
 
  a {
      text-decoration: none;
-     color: rgb(39, 147, 48);
+     color: rgb(37, 97, 193);
      font-weight: 900;
  }
 
@@ -102,10 +112,11 @@
  /* generateur */
 
  #generator {
-     font-size: 10vw;
+     font-size: 5vw;
+     padding: 20px;
      display: flex;
      justify-content: center;
-     margin: 150px;
+     margin: 100px;
      background-color: red;
      border-radius: 50px;
  }
@@ -147,11 +158,14 @@
      height: 200px;
      overflow: auto;
      text-align: center;
-     font-size: 2vw;
+     font-size: 1.4vw;
      color: rgb(8, 190, 8);
      background-color: #000;
  }
 
  #terminal {
-     width: 20vw;
+     width: 16vw;
  }
+
+
+
